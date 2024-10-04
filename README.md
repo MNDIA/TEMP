@@ -1,6 +1,6 @@
 DoH queries resolve over HTTPS for privacy, performance, and security. DoH also makes it easier to use a name server of your choice instead of the one configured for your system.
 | Who runs it | Base URL | Working*| Comment** |
-|-------------|----------|---------|---------|
+|-------------|----------|--|---------|
 | **A**
 |aapla.top|https://dns.aapla.top/dns-query|:heavy_check_mark:|Block ads, gambling & porn. Support DoT
 |[Absolight](https://www.absolight.fr/)|https://resolver1.absolight.net/dns-query<br>https://resolver2.absolight.net/dns-query<br>https://resolver3.absolight.net/dns-query|:heavy_check_mark:|Also support DoT
