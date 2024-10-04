@@ -1,70 +1,70 @@
 | name | url | comment | country |
 | --- | --- | --- | --- |
-| [AdGuard](https://adguard-dns.io/en/public-dns.html) | Default: https://dns.adguard-dns.com/dns-query <br> Family protection: https://family.adguard-dns.com/dns-query <br> Uncensored: https://unfiltered.adguard-dns.com/dns-query <br> | Default provides ad-blocking at DNS level, while Family protection adds adult site blocking. DNSSEC enabled and TLS 1.3. Also support DoT & DoQ | 俄罗斯 |
-| [AhaDNS](https://ahadns.com) | Netherlands:<br> https://doh.nl.ahadns.net/dns-query | Also support DoT through `dot.nl.ahadns.net`. Deprecated in favor of AhaDNS Blitz | 瑞典 |
 | [AliDNS](https://alidns.com) | https://dns.alidns.com/dns-query | Also support DoT & DoQ | 中国 |
-| [Andrews & Arnold](https://aa.net.uk/dns) | https://dns.aa.net.uk/dns-query | no logging (see [DNS Disclaimer](https://www.aa.net.uk/legal/dohdot-disclaimer/)), also support DoT | 英国 |
-| [Avast DNS](https://www.avast.com/dns) | https://secure.avastdns.com/dns-query |  | 捷克 |
-| bahopir188.dnshome.de | https://bahopir188.dnshome.de/dns-query | Block ads, also support DoT | 德国 |
-| [Belnet](https://dns.belnet.be) | https://dns.belnet.be/dns-query |  | 比利时 |
-| Bitdefender | https://dns.bitdefender.net/dns-query | Also support DoT | 罗马尼亚 |
-| [Blahdns](https://blahdns.com) | Germany: https://doh-de.blahdns.com/dns-query | Block ads, non-logging, no ECS, DNSSEC ready, support OpenNIC & ENS, also support DoT | 德国,芬兰,日本 |
-| [CCTLD.KG](https://dns.cctld.kg/doc/doh-chrome.html) | https://dns.cctld.kg/dns-query |  | 吉尔吉斯斯坦 |
-| [Charter](https://corporate.charter.com/) | https://doh-01.spectrum.com/dns-query<br>https://doh-02.spectrum.com/dns-query |  | 美国 |
+| [DNSPod](https://docs.dnspod.cn/public-dns/dot-doh/) | https://dns.pub/dns-query | Operated by Tencent Cloud, support DoT | 中国 |
+| [UncensoredDNS](https://blog.uncensoreddns.org/dns-servers/) | https://anycast.uncensoreddns.org/dns-query | Support DoT & DoQ | 丹麦 |
+| [AdGuard](https://adguard-dns.io/en/public-dns.html) | Default: https://dns.adguard-dns.com/dns-query <br> Family protection: https://family.adguard-dns.com/dns-query <br> Uncensored: https://unfiltered.adguard-dns.com/dns-query <br> | Default provides ad-blocking at DNS level, while Family protection adds adult site blocking. DNSSEC enabled and TLS 1.3. Also support DoT & DoQ | 俄罗斯 |
 | ch295.ru | https://dns.ch295.ru/dns-query | Block ads, support DoT & DoQ | 俄罗斯 |
-| cicitt.ch | https://c.cicitt.ch/dns-query | Block ads, support DoT | 瑞士 |
-| [Cisco Umbrella (OpenDNS)](https://support.opendns.com/hc/en-us/articles/360038086532-Using-DNS-over-HTTPS-DoH-with-OpenDNS) | Standard: https://doh.opendns.com/dns-query <br> FamilyShield (blocks adult content):  https://doh.familyshield.opendns.com/dns-query <br> Umbrella: https://doh.umbrella.com/dns-query | DNSSEC, Anycast | 美国 |
-| [CleanBrowsing](https://cleanbrowsing.org/help/docs/dnsoverhttps/) | https://doh.cleanbrowsing.org/doh/family-filter/ <br><br> Filter that allows some mixed-content sites: https://doh.cleanbrowsing.org/doh/adult-filter/ <br><br> Malware blocking only: https://doh.cleanbrowsing.org/doh/security-filter/ | anycast DoH server with parental control (restricts access to adult content + enforces safe search), support DoT | 美国 |
-| [Cloudflare](https://developers.cloudflare.com/1.1.1.1/) | https://cloudflare-dns.com/dns-query <br><br> Mozilla: https://mozilla.cloudflare-dns.com/dns-query <br><br> Block Malware: https://security.cloudflare-dns.com/dns-query <br><br> Block Malware and Adult Content: https://family.cloudflare-dns.com/dns-query <br><br> DNS64: https://dns64.cloudflare-dns.com/dns-query | Supports both -04 and -13 content-types, also support [DoT](https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-tls/) | 美国 |
-| csa-rz.de | https://dns.csa-rz.de/dns-query | Support DoT | 德国 |
-| [CZ.NIC](https://www.nic.cz/odvr/) | https://odvr.nic.cz/dns-query | Runs on [Knot Resolver](https://www.knot-resolver.cz/) (`doh2`), supports DNSSEC, provided by `.cz` TLD operator, support DoT | 捷克 |
-| datenquark.de | https://dns.datenquark.de/dns-query | Block ads, support DoT | 德国 |
-| [Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) | https://dns.digitale-gesellschaft.ch/dns-query | No query/IP logging, no filtering, QNAME minimization, TLS 1.3, DNSSEC, DoT; https://www.digitale-gesellschaft.ch/dns/ | 德国,瑞士 |
-| [dns0.eu](https://www.dns0.eu/) | Non-blocking: https://open.dns0.eu<br>Malware blocking: https://dns0.eu<br>Hardened security: https://zero.dns0.eu<br>Child safe: https://kids.dns0.eu | Non-logging, GDPR compliant | 欧洲 |
 | [dnscrypt.ca](https://dnscrypt.ca/) | https://dns1.dnscrypt.ca/dns-query | Support DoT | 加拿大 |
+| [Restena](https://www.restena.lu/en/document/190-configuring-your-server-public-dns-resolver) | https://dnspub.restena.lu/dns-query | DNSSEC validation, support DoT | 卢森堡 |
+| kepegawaiandju.id | https://chr.kepegawaiandju.id/dns-query | Block ads, support DoT | 印度尼西亚 |
+| [TWNIC](https://www.twnic.net.tw/) | https://dns.twnic.tw/dns-query | No source IP logging. Operated by [Quad101](https://101.101.101.101/index_en.html) project, according to this [announcement](https://blog.twnic.net.tw/2018/12/28/1803/) | 台湾 |
+| [CCTLD.KG](https://dns.cctld.kg/doc/doh-chrome.html) | https://dns.cctld.kg/dns-query |  | 吉尔吉斯斯坦 |
+| [W3C TAG](https://w3ctag.org) | https://dns.w3ctag.org/dns-query | Support DoT | 国际 |
+| Fancyorg.at | https://dns.fancyorg.at/dns-query | Adblocking | 奥地利 |
+| [Foundation for Applied Privacy](https://applied-privacy.net/services/dns/) | https://doh.applied-privacy.net/query | No query/IP logging, no filtering, QNAME minimization, no EDNS client subnet, TLS 1.3, DNSSEC, RFC7706, RFC8198, DoT | 奥地利 |
+| [NordVPN](https://nordvpn.com) | https://dns1.nordvpn.com/dns-query <br> https://dns2.nordvpn.com/dns-query | Support DoT | 巴拿马 |
+| frutuozo.com.br | https://adguard.frutuozo.com.br/dns-query | Block ads | 巴西 |
+| bahopir188.dnshome.de | https://bahopir188.dnshome.de/dns-query | Block ads, also support DoT | 德国 |
+| csa-rz.de | https://dns.csa-rz.de/dns-query | Support DoT | 德国 |
+| datenquark.de | https://dns.datenquark.de/dns-query | Block ads, support DoT | 德国 |
 | [dnsforge.de](https://dnsforge.de/) | Adblocking : https://dnsforge.de/dns-query <br> Ads and pornblocking : https://clean.dnsforge.de/dns-query <br> Hard : https://hard.dnsforge.de/dns-query | No logging. Support DNSSEC. Hosted in Germany, support DoT & DoQ | 德国 |
 | [dnsHome.de](https://www.dnshome.de/doh-dot-public-resolver.php) | https://dns.dnshome.de/dns-query | Supports DoH/DoH3 DoT/DoQ and DNSCrypt, No logging, No blocking | 德国 |
-| [DNSPod](https://docs.dnspod.cn/public-dns/dot-doh/) | https://dns.pub/dns-query | Operated by Tencent Cloud, support DoT | 中国 |
 | [Dukun.de](https://dukun.de/) | https://dukun.de/dns-query | Support DoT | 德国 |
-| Fancyorg.at | https://dns.fancyorg.at/dns-query | Adblocking | 奥地利 |
-| [FDN](https://www.fdn.fr/) - French Data Network | https://ns0.fdn.fr/dns-query <br> https://ns1.fdn.fr/dns-query | No log, no filter, DNSSEC, DoT … ([more informations in French](https://www.fdn.fr/ouverture-des-services-dot-doh/)) | 法国 |
 | [fehlsprache.de](https://fehlsprache.de) | https://dns.fehlsprache.de/dns-query | Support DoT | 德国 |
 | [ffmuc.net](https://ffmuc.net/wiki/doku.php?id=knb:dohdot_en) | https://doh.ffmuc.net/dns-query | DoH & DoT Server of Freifunk München. No logging, no filter, DNSSEC, OpenNIC, own recursion. More in our [wiki](https://ffmuc.net/wiki/doku.php?id=knb:dohdot_en) | 德国 |
-| [Foundation for Applied Privacy](https://applied-privacy.net/services/dns/) | https://doh.applied-privacy.net/query | No query/IP logging, no filtering, QNAME minimization, no EDNS client subnet, TLS 1.3, DNSSEC, RFC7706, RFC8198, DoT | 奥地利 |
 | [Freifunk Nordwest](https://ffnw.de) | https://dns.ffnw.de/dns-query | Support DoT | 德国 |
-| frutuozo.com.br | https://adguard.frutuozo.com.br/dns-query | Block ads | 巴西 |
-| [Google](https://developers.google.com/speed/public-dns/docs/doh) | https://dns.google/dns-query <br> DNS64: https://dns64.dns.google/dns-query <br> https://8888.google/dns-query | Full RFC 8484 support, EDNS, DNSSEC, no filtering, support DoT | 美国 |
 | grisumedia.de | https://dnsblock.grisumedia.de/dns-query | Block ads, support DoT | 德国 |
-| [Hurricane Electric](https://forums.he.net/index.php?topic=3996.0) | https://ordns.he.net | Support DoT & DoQ | 美国 |
-| [immerda.ch](https://docs.immerda.ch/de/services/doh/) | https://doh.immerda.ch/dns-query | Block ads | 瑞士 |
 | [In-Berlin](https://wiki.in-berlin.de/dns) | https://dns1.in-berlin.de/dns-query<br>https://dns2.in-berlin.de/dns-query | Support DoT | 德国 |
-| [Institut national de recherche en sciences et technologies du numérique](https://www.inria.fr/fr) | https://qlf-doh.inria.fr/dns-query | Support DoT | 法国 |
-| [Internet Initiative Japan](https://public.dns.iij.jp/) | https://public.dns.iij.jp/dns-query | Planned to run until March 2027, support DoT | 日本 |
-| is.my.waifu.cz | https://megumin.is.my.waifu.cz/dns-query<br>https://darkness.is.my.waifu.cz/dns-query<br>https://aqua.is.my.waifu.cz/dns-query<br>https://yunyun.is.my.waifu.cz/dns-query |  | 捷克 |
 | kastner-online.de | https://dns.kastner-online.de/dns-query | Block ads, support DoT | 德国 |
-| kepegawaiandju.id | https://chr.kepegawaiandju.id/dns-query | Block ads, support DoT | 印度尼西亚 |
-| k3nny.fr | https://dns.k3nny.fr/dns-query | Block ads, support DoT | 法国 |
 | meddy94.de | https://adguard.meddy94.de/dns-query | Adblocking, support DoT | 德国 |
-| [melvin2204.nl](https://melvin2204.nl) | https://dns.melvin2204.nl/dns-query | Block ads, support DoT | 荷兰 |
 | mnet-online.de | https://dns.mnet-online.de/dns-query | Support DoT | 德国 |
-| [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) | Non-blocking https://dns.mullvad.net/dns-query <br> Adblocking https://adblock.dns.mullvad.net/dns-query <br> Ad & malware blocking https://base.dns.mullvad.net/dns-query <br> Ad, malware, social media blocking https://extended.dns.mullvad.net/dns-query <br> Ad, malware, social media, adult content and gamble blocking https://all.dns.mullvad.net/dns-query <br> Ad, malware, adult content and gamble blocking https://family.dns.mullvad.net/dns-query | Public DoH server in US, DE, GB, SG, and SE with QNAME minimization, audited by [Assured](https://www.assured.se/wp-content/uploads/2021/03/Assured_Mullvad_DoH_server_audit_report.pdf), support DoT | 瑞典 |
-| [NIC.LV](https://doh.lv/) | https://doh.lv/dns-query <br> https://doh.nic.lv/dns-query | Run by .lv TLD registry , support DoT | 拉脱维亚 |
-| [NordVPN](https://nordvpn.com) | https://dns1.nordvpn.com/dns-query <br> https://dns2.nordvpn.com/dns-query | Support DoT | 巴拿马 |
-| [Quad9](https://quad9.net) | 9.9.9.9 (Secure): A threat-blocking, privacy-first recursive DNS service. <br> https://dns.quad9.net/dns-query <br><br> 9.9.9.10 (No Threat Blocking): For users who want to take advantage of privacy-first recursive DNS service, but do not want threat blocking. <br> https://dns10.quad9.net/dns-query <br><br> 9.9.9.11 (Secure + ECS): For users who do not route to the closest-possible Quad9 location, use 9.9.9.11 for better CDN performance. <br> https://dns11.quad9.net/dns-query <br><br> 9.9.9.12 (No Threat Blocking + ECS): For users who do not route to the closest-possible Quad9 location, and also do not want threat blocking, use 9.9.9.12 for better CDN performance. <br> https://dns12.quad9.net/dns-query | 9.9.9.9 - Malware blocking, DNSSEC validation <br> 9.9.9.10 - No malware blocking, no DNSSEC validation <br> 9.9.9.11 - Malware blocking, DNSSEC validation, ECS enabled <br> 9.9.9.12 - No malware blocking, no DNSSEC validation, ECS enabled, support DoT | 瑞士 |
-| [Restena](https://www.restena.lu/en/document/190-configuring-your-server-public-dns-resolver) | https://dnspub.restena.lu/dns-query | DNSSEC validation, support DoT | 卢森堡 |
 | [RobinGroppe.de](https://www.robingroppe.de/serverzeug/dns-server) | https://dns.rbn.gr/dns-query | Malware blocking, DNSSEC validation, support DoT | 德国 |
-| [Sunet DNS](https://wiki.sunet.se/display/DNS/Sunet+DNS) | https://resolver.sunet.se/dns-query | Support DoT | 瑞典 |
 | t53.de | https://dns.t53.de/dns-query | Support DoT | 德国 |
 | [Telekom Deutschland](https://telekomhilft.telekom.de/t5/Offentliche-Tests-Umfragen/Telekom-hilft-Labor-Testet-mit-uns-DNS-over-HTTPS/m-p/5008054) | https://dns.telekom.de/dns-query | Support DoT | 德国 |
 | Tls-data.de | https://dns.tls-data.de/dns-query |  | 德国 |
-| [Trash.net](https://www.trash.net/doh/) | Nonblocking: https://resolv1.trash.net/trash-dns<br>https://resolv2.trash.net/trash-dns<br>Adblocking: https://resolv3.trash.net/trash-dns |  | 瑞士 |
-| [TWNIC](https://www.twnic.net.tw/) | https://dns.twnic.tw/dns-query | No source IP logging. Operated by [Quad101](https://101.101.101.101/index_en.html) project, according to this [announcement](https://blog.twnic.net.tw/2018/12/28/1803/) | 台湾 |
-| [UncensoredDNS](https://blog.uncensoreddns.org/dns-servers/) | https://anycast.uncensoreddns.org/dns-query | Support DoT & DoQ | 丹麦 |
 | waringer-atg.de | https://abel.waringer-atg.de/dns-query |  | 德国 |
 | webnmail.de | https://doh.webnmail.de/dns-query | Support DoT through `dot.webnmail.de` | 德国 |
-| [W3C TAG](https://w3ctag.org) | https://dns.w3ctag.org/dns-query | Support DoT | 国际 |
 | 3wv.de | https://dns.3wv.de/dns-query | Block ads, support DoT | 德国 |
+| [Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) | https://dns.digitale-gesellschaft.ch/dns-query | No query/IP logging, no filtering, QNAME minimization, TLS 1.3, DNSSEC, DoT; https://www.digitale-gesellschaft.ch/dns/ | 德国,瑞士 |
+| [Blahdns](https://blahdns.com) | Germany: https://doh-de.blahdns.com/dns-query | Block ads, non-logging, no ECS, DNSSEC ready, support OpenNIC & ENS, also support DoT | 德国,芬兰,日本 |
+| [NIC.LV](https://doh.lv/) | https://doh.lv/dns-query <br> https://doh.nic.lv/dns-query | Run by .lv TLD registry , support DoT | 拉脱维亚 |
+| [Avast DNS](https://www.avast.com/dns) | https://secure.avastdns.com/dns-query |  | 捷克 |
+| [CZ.NIC](https://www.nic.cz/odvr/) | https://odvr.nic.cz/dns-query | Runs on [Knot Resolver](https://www.knot-resolver.cz/) (`doh2`), supports DNSSEC, provided by `.cz` TLD operator, support DoT | 捷克 |
+| is.my.waifu.cz | https://megumin.is.my.waifu.cz/dns-query<br>https://darkness.is.my.waifu.cz/dns-query<br>https://aqua.is.my.waifu.cz/dns-query<br>https://yunyun.is.my.waifu.cz/dns-query |  | 捷克 |
 | 9999.sg | https://dns.9999.sg/dns-query |  | 新加坡 |
+| [Internet Initiative Japan](https://public.dns.iij.jp/) | https://public.dns.iij.jp/dns-query | Planned to run until March 2027, support DoT | 日本 |
+| [dns0.eu](https://www.dns0.eu/) | Non-blocking: https://open.dns0.eu<br>Malware blocking: https://dns0.eu<br>Hardened security: https://zero.dns0.eu<br>Child safe: https://kids.dns0.eu | Non-logging, GDPR compliant | 欧洲 |
+| [Belnet](https://dns.belnet.be) | https://dns.belnet.be/dns-query |  | 比利时 |
+| [FDN](https://www.fdn.fr/) - French Data Network | https://ns0.fdn.fr/dns-query <br> https://ns1.fdn.fr/dns-query | No log, no filter, DNSSEC, DoT … ([more informations in French](https://www.fdn.fr/ouverture-des-services-dot-doh/)) | 法国 |
+| [Institut national de recherche en sciences et technologies du numérique](https://www.inria.fr/fr) | https://qlf-doh.inria.fr/dns-query | Support DoT | 法国 |
+| k3nny.fr | https://dns.k3nny.fr/dns-query | Block ads, support DoT | 法国 |
+| [AhaDNS](https://ahadns.com) | Netherlands:<br> https://doh.nl.ahadns.net/dns-query | Also support DoT through `dot.nl.ahadns.net`. Deprecated in favor of AhaDNS Blitz | 瑞典 |
+| [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) | Non-blocking https://dns.mullvad.net/dns-query <br> Adblocking https://adblock.dns.mullvad.net/dns-query <br> Ad & malware blocking https://base.dns.mullvad.net/dns-query <br> Ad, malware, social media blocking https://extended.dns.mullvad.net/dns-query <br> Ad, malware, social media, adult content and gamble blocking https://all.dns.mullvad.net/dns-query <br> Ad, malware, adult content and gamble blocking https://family.dns.mullvad.net/dns-query | Public DoH server in US, DE, GB, SG, and SE with QNAME minimization, audited by [Assured](https://www.assured.se/wp-content/uploads/2021/03/Assured_Mullvad_DoH_server_audit_report.pdf), support DoT | 瑞典 |
+| [Sunet DNS](https://wiki.sunet.se/display/DNS/Sunet+DNS) | https://resolver.sunet.se/dns-query | Support DoT | 瑞典 |
+| cicitt.ch | https://c.cicitt.ch/dns-query | Block ads, support DoT | 瑞士 |
+| [immerda.ch](https://docs.immerda.ch/de/services/doh/) | https://doh.immerda.ch/dns-query | Block ads | 瑞士 |
+| [Quad9](https://quad9.net) | 9.9.9.9 (Secure): A threat-blocking, privacy-first recursive DNS service. <br> https://dns.quad9.net/dns-query <br><br> 9.9.9.10 (No Threat Blocking): For users who want to take advantage of privacy-first recursive DNS service, but do not want threat blocking. <br> https://dns10.quad9.net/dns-query <br><br> 9.9.9.11 (Secure + ECS): For users who do not route to the closest-possible Quad9 location, use 9.9.9.11 for better CDN performance. <br> https://dns11.quad9.net/dns-query <br><br> 9.9.9.12 (No Threat Blocking + ECS): For users who do not route to the closest-possible Quad9 location, and also do not want threat blocking, use 9.9.9.12 for better CDN performance. <br> https://dns12.quad9.net/dns-query | 9.9.9.9 - Malware blocking, DNSSEC validation <br> 9.9.9.10 - No malware blocking, no DNSSEC validation <br> 9.9.9.11 - Malware blocking, DNSSEC validation, ECS enabled <br> 9.9.9.12 - No malware blocking, no DNSSEC validation, ECS enabled, support DoT | 瑞士 |
+| [Trash.net](https://www.trash.net/doh/) | Nonblocking: https://resolv1.trash.net/trash-dns<br>https://resolv2.trash.net/trash-dns<br>Adblocking: https://resolv3.trash.net/trash-dns |  | 瑞士 |
+| Bitdefender | https://dns.bitdefender.net/dns-query | Also support DoT | 罗马尼亚 |
+| [Charter](https://corporate.charter.com/) | https://doh-01.spectrum.com/dns-query<br>https://doh-02.spectrum.com/dns-query |  | 美国 |
+| [Cisco Umbrella (OpenDNS)](https://support.opendns.com/hc/en-us/articles/360038086532-Using-DNS-over-HTTPS-DoH-with-OpenDNS) | Standard: https://doh.opendns.com/dns-query <br> FamilyShield (blocks adult content):  https://doh.familyshield.opendns.com/dns-query <br> Umbrella: https://doh.umbrella.com/dns-query | DNSSEC, Anycast | 美国 |
+| [CleanBrowsing](https://cleanbrowsing.org/help/docs/dnsoverhttps/) | https://doh.cleanbrowsing.org/doh/family-filter/ <br><br> Filter that allows some mixed-content sites: https://doh.cleanbrowsing.org/doh/adult-filter/ <br><br> Malware blocking only: https://doh.cleanbrowsing.org/doh/security-filter/ | anycast DoH server with parental control (restricts access to adult content + enforces safe search), support DoT | 美国 |
+| [Cloudflare](https://developers.cloudflare.com/1.1.1.1/) | https://cloudflare-dns.com/dns-query <br><br> Mozilla: https://mozilla.cloudflare-dns.com/dns-query <br><br> Block Malware: https://security.cloudflare-dns.com/dns-query <br><br> Block Malware and Adult Content: https://family.cloudflare-dns.com/dns-query <br><br> DNS64: https://dns64.cloudflare-dns.com/dns-query | Supports both -04 and -13 content-types, also support [DoT](https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-tls/) | 美国 |
+| [Google](https://developers.google.com/speed/public-dns/docs/doh) | https://dns.google/dns-query <br> DNS64: https://dns64.dns.google/dns-query <br> https://8888.google/dns-query | Full RFC 8484 support, EDNS, DNSSEC, no filtering, support DoT | 美国 |
+| [Hurricane Electric](https://forums.he.net/index.php?topic=3996.0) | https://ordns.he.net | Support DoT & DoQ | 美国 |
+| [Andrews & Arnold](https://aa.net.uk/dns) | https://dns.aa.net.uk/dns-query | no logging (see [DNS Disclaimer](https://www.aa.net.uk/legal/dohdot-disclaimer/)), also support DoT | 英国 |
+| [melvin2204.nl](https://melvin2204.nl) | https://dns.melvin2204.nl/dns-query | Block ads, support DoT | 荷兰 |
 | [Absolight](https://www.absolight.fr/) | https://resolver1.absolight.net/dns-query<br>https://resolver2.absolight.net/dns-query<br>https://resolver3.absolight.net/dns-query | Also support DoT | 未知 |
 | [AdFilter](https://adfilter.net/) | Perth: https://per.adfilter.net/dns-query<br>Sydney: https://syd.adfilter.net/dns-query<br>Adelaide: https://adl.adfilter.net/dns-query | Adblocking, aggregated statistics kept for 30 days. Also support DoT | 未知 |
 | Adfreedns | https://adfreedns.top/dns-query | Adblocking. Also support DoT & DoQ | 未知 |
