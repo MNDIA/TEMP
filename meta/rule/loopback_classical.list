@@ -2,6 +2,4 @@ PROCESS-NAME,naive.exe
 PROCESS-NAME,leigod.exe
 PROCESS-NAME,naive
 PROCESS-NAME,mihomo
-PROCESS-NAME,tailscale
-PROCESS-NAME,tailscaled
 DOMAIN-SUFFIX,tky.3825227.xyz
