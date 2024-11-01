@@ -6,4 +6,4 @@ DOMAIN-SUFFIX,watchhentai.net
 DOMAIN-SUFFIX,gdvid.info
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,z-library.sk
-PROCESS-NAME,com.levelinfinite.sgameGlobal
+AND,((PROCESS-NAME,com.levelinfinite.sgameGlobal),(NETWORK,TCP))
