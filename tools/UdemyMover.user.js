@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Udemy自助翻译助手
+// @name         Udemy自动翻译助手
 // @namespace    http://tampermonkey.net/
-// @version      1.1
-// @description  将译文内容替换到视频字幕中
+// @version      1.2
+// @description  将译文内容替换到视频字幕中，配合沉浸式翻译使用。可选双行显示，可选支持双语显示。
 // @author       ME
 // @match        https://*.udemy.com/course/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=udemy.com
@@ -10,6 +10,8 @@
 // @grant        GM_getValue
 // @grant        GM_registerMenuCommand
 // @grant        GM_addStyle
+// @updateURL    https://raw.githubusercontent.com/MNDIA/TEMP/main/tools/UdemyMover.user.js
+// @downloadURL  https://raw.githubusercontent.com/MNDIA/TEMP/main/tools/UdemyMover.user.js
 // ==/UserScript==
 
 (function() {
@@ -18,6 +20,7 @@
 
     const DEFAULT_SETTINGS = {
         enabled: true,
+        bilingualismWithlinebreaks: true,
         embeddedSubtitles: '.captions-display--captions-cue-text--XXXXX',
         bottomSubtitles: '.well--text--XX-XX', 
         translationTarget: 'p[data-purpose="transcript-cue-active"] span'
@@ -190,6 +193,14 @@
             </label>
             <span class="toggle-label">字幕列表自动替换视频字幕</span>
         </div>
+
+        <div class="toggle-wrapper">
+            <label class="toggle">
+                <input type="checkbox" id="bilingualismWithlinebreaks-enabled" ${settings.bilingualismWithlinebreaks ? 'checked' : ''}>
+                <span class="toggle-slider"></span>
+            </label>
+            <span class="toggle-label">双文时使用双行显示</span>
+        </div>
         
         <div class="setting-group">
             <label for="embeddedSubtitles">视频内嵌字幕元素:</label>
@@ -224,6 +235,7 @@
         document.getElementById('translator-save').addEventListener('click', () => {
           
             settings.enabled = document.getElementById('translator-enabled').checked;
+            settings.bilingualismWithlinebreaks = document.getElementById('bilingualismWithlinebreaks-enabled').checked;
             settings.embeddedSubtitles = document.getElementById('embeddedSubtitles').value;
             settings.bottomSubtitles = document.getElementById('bottomSubtitles').value;
             settings.translationTarget = document.getElementById('translationTarget').value;
@@ -245,7 +257,7 @@
         const secondaryCaptionElement = document.querySelector(settings.bottomSubtitles);
         
         
-        const translationElement = document.querySelector(settings.translationTarget);
+        const translationElement = document.querySelector(settings.translationTarget);//p[data-purpose="transcript-cue-active"] span
         
       
         let targetCaptionElement = captionElement || secondaryCaptionElement;
@@ -260,7 +272,35 @@
             return false;
         }
         
-        const newContent = translationElement.textContent;
+        
+        const innerTranslation = translationElement.querySelector('.immersive-translate-target-inner');
+        let newContent = '';
+        
+        if (innerTranslation) {
+            
+            const translatedText = innerTranslation.textContent.trim();
+
+           
+            const fullText = translationElement.textContent.trim();
+
+           
+            if (settings.bilingualismWithlinebreaks && fullText.length > translatedText.length) {
+            
+                const originalText = fullText.replace(translatedText, '').trim();
+
+                if (originalText) {
+                   
+                    newContent = translatedText + '\n' + originalText;
+                } else {
+                    newContent = translatedText;
+                }
+            } else {
+                newContent = fullText;
+            }
+        } else {
+            
+            newContent = translationElement.textContent;
+        }
         
         
         if (targetCaptionElement.textContent === newContent) {
@@ -294,7 +334,7 @@
             characterData: true 
         });
         
-        console.log('✅ ');
+        console.log('✅ Udemy自动翻译助手已启动');
     }
 
 
@@ -302,7 +342,7 @@
         if (observer) {
             observer.disconnect();
             observer = null;
-            console.log('❌ ');
+            console.log('❌ Udemy自动翻译助手已停止');
         }
     }
 
