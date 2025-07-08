@@ -7,4 +7,4 @@ DOMAIN-SUFFIX,hentaimama.io
 DOMAIN-SUFFIX,watchhentai.net
 DOMAIN-SUFFIX,gdvid.info
 DOMAIN-SUFFIX,z-library.sk
-AND,((PROCESS-NAME,com.levelinfinite.sgameGlobal),(NETWORK,TCP))
+PROCESS-NAME,com.levelinfinite.sgameGlobal
