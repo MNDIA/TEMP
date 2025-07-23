@@ -1,5 +1,7 @@
 PROCESS-NAME,naive.exe
+PROCESS-NAME,xray.exe
 PROCESS-NAME,leigod.exe
 PROCESS-NAME,naive
 PROCESS-NAME,mihomo
+PROCESS-NAME,xray
 DOMAIN-SUFFIX,tky.3825227.xyz
